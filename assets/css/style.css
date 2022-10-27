@@ -1,0 +1,96 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css";
+@import "responsive.css";
+@import "nav.css";
+@import "home.css";
+@import "about.css";
+@import "work.css";
+@import "resume.css";
+@import "timeline.css";
+@import "contact.css";
+@import "services.css";
+@import "footer.css";
+@import "mobileMenu.css";
+@import "portfolio.css";
+:root {
+    /* --bgcolor: #ffffff; */
+    --bgcolor:#2C3E50;
+    /* --txtcolor: #474747; */
+    --txtcolor:#fff;
+    /* --dbg:#000000; */
+}
+html[theme="dark"]{
+    --bgcolor:#2C3E50;
+    --txtcolor:#fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    scroll-behavior: smooth;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+body{
+    font-family:'poppins', sans-serif;
+    background-color:var(--bgcolor);
+    color:var(--txtcolor);
+   position: relative;
+}
+
+/* scrollbar design */
+
+::-webkit-scrollbar {
+    /* display:none; */
+    width: 10px;
+    background-color:var(--bgcolor);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #0bceaf;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: var(--bgcolor);
+}
+
+/* bubbles */
+.bubbles{
+    position: relative;
+    display:flex;
+    justify-content: space-around;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0bceaf;
+    margin: 0 4px;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+        0 0 50px #0bceaf,
+        0 0 100px #0bceaf;
+    animation: animate 12s linear infinite;
+    animation-duration: calc(85s / var(--i));
+    z-index: -9999;
+}
+.bubbles span:nth-child(even){
+    background-color: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+        0 0 50px #ff2d75,
+        0 0 100px #ff2d75;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0) rotate(0deg);
+        /* opacity: 0; */
+    }
+    100%{
+        transform: translateY(-10vh) scale(1) rotate(360deg);
+        /* opacity: 1; */
+    }
+}

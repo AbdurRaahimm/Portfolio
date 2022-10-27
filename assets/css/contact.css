@@ -1,0 +1,138 @@
+section#contact {
+    padding-top: 85px;
+}
+
+#contact h2{
+    text-align: center;
+    position: relative;
+}
+#contact h2::before {
+    position: absolute;
+    content: '';
+    width: 12%;
+    background-color: #f5f5f5;
+    height: 2px;
+    bottom: -10px;
+}
+
+#contact h2::after {
+    position: absolute;
+    margin-left: -8%;
+    content: '';
+    width: 4%;
+    background-color: #0bceae;
+    height: 2px;
+    bottom: -10px;
+}
+#contact .cntact-box {
+    margin: 25px 0;
+}
+#contact .info-block {
+    background:#2C3E50;
+    /* box-shadow: 0px 10px 20px 4px #00000015; */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    text-align: center;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+}
+#contact .info-block .ci-icon{ 
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    border: 2px solid #0bceae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.ci-text a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#contact .info-block .ci-icon i{
+    color: #0bceae;
+    font-size: 1.5em ;
+}
+#contact .info-block .ci-text{
+    line-height: 1.8em;
+    margin-top: 10px;
+}
+input, textarea{
+    background: transparent;
+    color: #fff;
+    
+}
+input::placeholder,textarea::placeholder{
+    color: #fff;
+}
+.name #fname, #lname{
+    padding: 15px 10px;
+    border: 1px solid #0bceae;
+    border-radius: 0.25rem;
+    margin-bottom: 10px;
+}
+.name #fname, #lname{
+    width:49.5%;
+}
+#contact #email{
+    width:100%;
+    padding: 15px 10px;
+    border: 1px solid #0bceae;
+    border-radius: 0.25rem;
+    margin-bottom: 10px;
+}
+
+#contact textarea{ 
+    width:100%;
+    padding: 15px 10px;
+    border: 1px solid #0bceae;
+    border-radius: 0.25rem;
+    margin-bottom: 10px;
+    resize: none;
+}
+#contact button {
+    display: inline-block;
+    position: relative;
+    padding: 0.8em 2.1em;
+    margin-bottom: 0.75em;
+    margin-right: 0.25em;
+    font-size: 1em;
+    line-height: 1.2;
+    border: 0;
+    outline: 0;
+    border: 2px solid #0bceae;
+    color: #ffffff;
+    text-shadow: none;
+    background-color: #0bceae;
+    border-radius: 30px;
+    font-family: poppins, Helvetica, sans-serif;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 22%);
+    cursor: pointer;
+    width: 100%;
+}
+
+#contact button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #0bceae;
+}
+#contact textarea, input:focus{
+    outline: none;
+}
+#contact textarea,
+input:placeholder {
+    font-weight: bold;
+    color: red;
+}
+
+@media  screen and (max-width:851px){
+.name #fname,
+    #lname {
+        width: 100%;
+    }
+}
